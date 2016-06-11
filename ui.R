@@ -1,7 +1,6 @@
 library("ggvis")
 
 shinyUI(fluidPage(
-  theme = "bootstrap.css",
   verticalLayout(
     titlePanel("Data Science Capstone: Text Prediction"),
     #h4("Introduction"),
