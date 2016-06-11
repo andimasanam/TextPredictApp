@@ -4,7 +4,7 @@ library(stringr)
 library(dplyr)
 library(ggvis)
 library(data.table)
-
+library(shiny)
 
 
 load(file="gram_dt.RData")
