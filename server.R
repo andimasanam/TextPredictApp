@@ -7,8 +7,8 @@ library(data.table)
 
 
 
-load(file="data/gram_dt.RData")
-load(file="data/sample_news.RData")
+load(file="gram_dt.RData")
+load(file="sample_news.RData")
 
 # Helper function to preprocess corpus
 CorpusPreprocess <- function(corpus){
@@ -60,10 +60,6 @@ Predict.Phrase <- function(phrase){
   }
   return(prediction)
 }
-
-# Helper function to add tooltip for ggvis
-
-#print(Predict.Word("This", "Shiny"))
 
 shinyServer(function(input, output, session) {
   output$singlePredict <- renderPrint({
